@@ -1,10 +1,10 @@
 <?php
 ob_start();
 date_default_timezone_set('Asia/Manila');
-$webroot = "c:xampp/htdocs/";
+$webroot = "/var/www/html"; 
 define('DS', DIRECTORY_SEPARATOR);
-define('SITE_ROOT', $webroot.DS.'wedding-management-php'.DS.'admin');
-define('INCLUDES_PATH', SITE_ROOT.DS.'include');
+define('SITE_ROOT', $webroot . DS . 'Kolors-Project' . DS . 'admin'); 
+define('INCLUDES_PATH', SITE_ROOT . DS . 'include');
 require_once(INCLUDES_PATH.DS."Helper.php");
 require_once(INCLUDES_PATH.DS."config.php");
 require_once(INCLUDES_PATH.DS."database.php");
