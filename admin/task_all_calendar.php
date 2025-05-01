@@ -4,7 +4,7 @@
 
     $booking = Booking::find_booking_all();
     if (!isset($_SESSION['id'])) { redirect_to("../");}
-    $bdd = new PDO('mysql:host=localhost;dbname=dbwedding', 'root', '');
+    $bdd = new PDO('mysql:host=localhost;dbname=dbwedding', 'kolors', 'harsh@4545');
     $sql = "SELECT id, title, location, start, end, color FROM events";
     $req = $bdd->prepare($sql);
     $req->execute();
