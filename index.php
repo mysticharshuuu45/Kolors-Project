@@ -9,7 +9,7 @@
     $booking = new Booking();
     $category = Category::find_all();
     $blogEvent = EventWedding::getEventBlogs();
-
+#my name is harsh
     if (isset($_POST['register'])) {
 
         $user_firstname = clean($_POST['user_firstname']);
